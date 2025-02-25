@@ -22,6 +22,7 @@ public class GreetingsController {
     @GetMapping("/hello-world")
     @ResponseBody
     public Greeting sayHello(@RequestParam(name="name", required=false, defaultValue="Stranger") String name) {
+        // TODO
         return greetingsService.hello(name);
     }
 
